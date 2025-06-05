@@ -6,11 +6,13 @@ export function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const apiBase = import.meta.env.VITE_API_BASE_URL;
+
 
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://mag7backend-production.up.railway.app/", {
+      const response = await fetch(`${apiBase}/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
