@@ -1,5 +1,5 @@
 import React from "react";
 
 export function Admin() {
-  return <div className="p-10">Admin Control Panel</div>;
+  return <div className="p-4 text-xl">Admin Page</div>;
 }
