@@ -10,7 +10,7 @@ export function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://your-backend-url.com/auth/register", {
+      const response = await fetch("https://mag7backend-production.up.railway.app/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
