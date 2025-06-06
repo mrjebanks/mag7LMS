@@ -21,6 +21,8 @@ export default function Login() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
+        // FIX: Include credentials (cookies) in the request
+        credentials: 'include',
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.msg || 'Login failed');
