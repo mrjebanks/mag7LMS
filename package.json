@@ -13,6 +13,27 @@
     "react": "^18",
     "react-dom": "^18"
   },
+  {
+  "headers": [
+    {
+      "source": "/vercel-config-cors",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://mag7-lms.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
