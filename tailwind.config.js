@@ -1,7 +1,1 @@
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+lms_frontend_tailwind_config
